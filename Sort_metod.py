@@ -3,8 +3,8 @@ def bubble_sort(arr):
     for i in range(0, len(arr)-1):
         all_sorted = True
         for j in range(0, len(arr)-i-1):
-            if arr[j] > arr[j+1]
-            all_sorted = False
+            if arr[j] > arr[j+1]:
+                all_sorted = False
             arr[j+1], arr[j] = arr[j], arr[j+1]
         if all_sorted:
             return arr
