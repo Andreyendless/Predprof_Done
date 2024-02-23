@@ -14,9 +14,6 @@ with open('students.csv', encoding='utf-8') as file:
     reader = list(csv.DictReader(file, delimiter=',', quotechar='"'))
     ##print(*reader, sep='\n')
     for i in range(len(reader)):
-        if reader[i]['score'] == None:
-            reader[i]['score'] = 0
-    for i in range(len(reader)):
         cursor = reader[i]
         cursor_score = int(cursor['score'] if cursor['score']!='None' else 0)
         pos = i
