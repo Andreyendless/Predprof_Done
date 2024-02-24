@@ -71,3 +71,5 @@ def quick_sort(array, start, stop):
         right -= 1
     quick_sort(array, start, right)
     quick_sort(array, left, stop)
+a = [5, 4, 7, 8, 1, 9, 4, 6, 5, 7,]
+print(quick_sort(a, 0, len(a)-1))
