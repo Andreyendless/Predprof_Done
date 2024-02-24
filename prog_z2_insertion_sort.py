@@ -27,6 +27,13 @@ with open('students.csv', encoding='utf-8') as file:
     for i in range(len(reader)):
         if '10' in reader[i]['class'] and count < 3:
             count += 1
+
             student_all = reader[i]["Name"].split()
             student_cut = student_all[1][0] + '. ' + student_all[0]
             print(f'{count} место: {student_cut}')
+"""Вывод:
+10 класс
+1 место: Д. Дориков
+2 место: В. Королупов
+3 место: И. Моторыгин
+"""
